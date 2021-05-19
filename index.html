@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KakulatorBMI</title>
+    <link rel="stylesheet" href="/assetes/css/style.css">
+</head>
+
+<body>
+
+
+
+    <form id="form">
+        <div class="input-group gender">
+            <label for="cowo">
+                <input type="radio" name="gender" id="cowo" value="cowo" checked> laki-laki
+            </label>
+            <label for="cewe">
+                <input type="radio" name="gender" id="cewe" value="cewe"> perempuan
+            </label>
+        </div>
+
+        <div class="input-group">
+            <input type="number" name="tinggi" id="tinggi" min="100" placeholder="Masukkan tinggi badan" required>
+        </div>
+
+        <button type="submit">Lihat Hasil</button>
+    </form>
+
+    <h4 id="hasil">0 Kg</h4>
+
+<Script src="/assetes/js/script.js"></Script>
+
+</body>
+
+</html>
