@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+}
+
+.container{
+    height: 55%;
+    width: 400px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4%;
+    text-align: center;
+}
+
+.container form{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .gender{
+background-color: darkseagreen;
+display: flex;
+flex-direction: row;
+}
+
+.container form label.man{
+    width: 50%;
+    background-color: brown;
+    
+   
+}
+.container form label.woman{
+    background-color: deeppink;
+    width: 50%;
+    
+}
+
+.hasil{
+    margin-top: 20%;
+    height: 20%;
+    background-color: antiquewhite;
+    text-align: center;
+}

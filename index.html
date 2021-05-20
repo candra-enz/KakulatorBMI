@@ -7,32 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KakulatorBMI</title>
     <link rel="stylesheet" href="/assetes/css/style.css">
+
 </head>
 
 <body>
 
 
+    <div class="container">
 
-    <form id="form">
-        <div class="input-group gender">
-            <label for="cowo">
-                <input type="radio" name="gender" id="cowo" value="cowo" checked> laki-laki
-            </label>
-            <label for="cewe">
-                <input type="radio" name="gender" id="cewe" value="cewe"> perempuan
-            </label>
+        <h2>BMI KAKULATOR</h2>
+        <form id="form">
+            <div class="gender">
+                <label class="man" for="man">
+                    <input type="radio" name="gender" id="man" value="man" checked> laki-laki
+                </label>
+                <label class="woman" for="woman">
+                    <input type="radio" name="gender" id="woman" value="woman"> perempuan
+                </label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" name="tinggi" id="tinggi" min="100" placeholder="Masukkan tinggi badan" required>
+            </div>
+
+            <button type="submit">Hitung</button>
+        </form>
+        <div class="hasil">
+            <p id="hasil"></p>
         </div>
 
-        <div class="input-group">
-            <input type="number" name="tinggi" id="tinggi" min="100" placeholder="Masukkan tinggi badan" required>
-        </div>
+    </div>
 
-        <button type="submit">Lihat Hasil</button>
-    </form>
 
-    <h4 id="hasil">0 Kg</h4>
-
-<Script src="/assetes/js/script.js"></Script>
+    <Script src="/assetes/js/script.js"></Script>
 
 </body>
 
