@@ -14,28 +14,34 @@
 
 
     <div class="container">
-
-        <h2>BMI KAKULATOR</h2>
+<div class="header">
+<h2>BMI KAKULATOR</h2>
+</div>
+      
         <form id="form">
             <div class="gender">
                 <label class="man" for="man">
-                    <input type="radio" name="gender" id="man" value="man" checked> laki-laki
+                    <input type="radio" name="gender" id="man" value="man" checked> Laki-laki
                 </label>
                 <label class="woman" for="woman">
-                    <input type="radio" name="gender" id="woman" value="woman"> perempuan
+                    <input type="radio" name="gender" id="woman" value="woman"> Perempuan
                 </label>
             </div>
 
-            <div class="input-group">
-                <input type="number" name="tinggi" id="tinggi" min="100" placeholder="Masukkan tinggi badan" required>
-            </div>
-
-            <button type="submit">Hitung</button>
+                <input class="resizedTextbox" type="number" name="tinggi" id="tinggi" min="100" placeholder="Masukkan tinggi badan dalam sekala cm" required>
+           
+            
+                <p id="hasil"></p>
+         <div class="button-grup">
+              <button class="button" type="reset">Reset</button>
+              <button class="button" type="submit">Hitung</button>
+         </div>
+          
+         
         </form>
-        <div class="hasil">
-            <p id="hasil"></p>
-        </div>
-
+       
+          
+        
     </div>
 
 

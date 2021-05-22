@@ -12,45 +12,89 @@ display: flex;
   height: 100vh;
 }
 
+.header{
+    background-color: dodgerblue;
+}
+
 .container{
     height: 55%;
     width: 400px;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 4%;
+    justify-content: space-evenly;
+    padding: 0 4% 4% 4%;
     text-align: center;
 }
 
 .container form{
-    height: 40%;
+    height: 60%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* align-items: center; */
+    
 }
 
 .container .gender{
-background-color: darkseagreen;
+
 display: flex;
 flex-direction: row;
 }
 
 .container form label.man{
     width: 50%;
-    background-color: brown;
+   
     
    
 }
 .container form label.woman{
-    background-color: deeppink;
+    
     width: 50%;
     
 }
 
-.hasil{
-    margin-top: 20%;
+.container form .input-tinggi{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+       width: 100%;
     height: 20%;
+     text-align: center;
+     background-color: aliceblue;
+    
+
+}
+
+p#hasil{
+   
+    
+    height: 20%; 
     background-color: antiquewhite;
     text-align: center;
+    color: brown;
+    font-weight: 700;
+    font-size: medium;
+
+}
+
+.resizedTextbox { width: 100%;  height: 20%;}
+
+
+
+.button-grup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    
+}
+
+.button{
+      width: 45%;
+    height: 100%;
+    background-color:blue;
+    border-color: blue;
 }
