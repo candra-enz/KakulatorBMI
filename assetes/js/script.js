@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
 
         }
 
-         hasil = beratIdeal + ' kg';
+    hasil ='Berat Ideal kamu ' +beratIdeal + ' kg';
    
    
     result.innerText = hasil;
