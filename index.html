@@ -11,43 +11,58 @@
 </head>
 
 <body>
-<div class="main">
-<div class="header">
-    <h2>BMI KAKULATOR</h2>
-</div>
-    <div class="container">
+    
+    <div class="main">
+        <div class="header">
+            <h2>BMI KAKULATOR</h2>
+        </div>
+        <div class="container">
 
-      
-        <form id="form">
-            <div class="gender">
-                <label class="man" for="man">
-                    <input type="radio" name="gender" id="man" value="man" checked> Laki-laki
-                    
-                </label>
-                <label class="woman" for="woman">
-                    <input type="radio" name="gender" id="woman" value="woman"> Perempuan
-                </label>
-            </div>
 
-                <input class="resizedTextbox" type="text" name="tinggi" id="tinggi" min="100" placeholder="Tinggi"  required>
-        <p id="hasil"></p>
-        <p id="info">Mohon masukan tinggi [cm]</p>
- 
-            
-                
-         <div class="button-grup">
-              <button class="button" type="reset">Reset</button>
-              <button class="button" type="submit">Hitung</button>
-         </div>
-          
-         
-        </form>
-       
-          
-        
+            <form id="form">
+                <div class="gender">
+                    <label class="man" for="man">
+                        <input type="radio" name="gender" id="man" value="man" checked> Laki-laki
+
+                    </label>
+                    <label class="woman" for="woman">
+                        <input type="radio" name="gender" id="woman" value="woman"> Perempuan
+                    </label>
+                </div>
+
+                <input class="resizedTextbox" type="text" name="tinggi" id="tinggi" maxlength="3"
+                    placeholder="Tinggi" onkeypress="return hanyaAngka(event)"  required>
+                <p id="hasil"></p>
+                <p id="info">Mohon masukan tinggi [cm]</p>
+
+
+
+                <div class="button-grup">
+                    <button class="button" type="reset">Reset</button>
+                    <button  class="button" type="submit">Hitung</button>
+                </div>
+
+
+            </form>
+
+
+
+        </div>
     </div>
-</div>
+    <script>
+  
 
+
+        function hanyaAngka(evt) {
+            var input = (evt.which) ? evt.which : event.keyCode
+            if (input > 31 && (input < 48 || input > 57))
+
+                return false;
+            return true;
+        }
+
+
+    </script>
     <Script src="/assetes/js/script.js"></Script>
 
 </body>
