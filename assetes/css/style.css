@@ -13,19 +13,23 @@ display: flex;
 }
 
 .main{
-background-color: cornflowerblue;
-height: 55%;
+background-color: rgb(251, 251, 251);
+height: 60%;
 width: 400px;
-border-radius: 90px;
+border-radius: 30px;
+
+
 } 
 
 
 .header{
-    background-color: dodgerblue;
+   		color: #fff;
+				background-image: linear-gradient(120deg,#2e86de,#ff6b6b);
     width: 100%;
     height:  10%;
     text-align: center;
     padding: 4px;
+    border-radius: 12px 12px 0px 0px;
 }
 
 
@@ -37,17 +41,20 @@ border-radius: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 4% 4% 4%;
+    padding: 0 7% 0% 7%;
     text-align: center;
+    border-radius: 0px 0px 12px 12px;
+  
 }
 
 .container form{
-    height: 60%;
-    
+    margin-top: 10%;
+    height:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     /* align-items: center; */
+   
     
 }
 
@@ -58,19 +65,33 @@ flex-direction: row;
 justify-content: space-between;
 }
 
+			#wowan:focus, #man:focus{
+				border-bottom: 2px solid #341f97;
+				width: 300px;
+				transition: 0.5s;
+			}
+
+
+.container form .gender label{
+      color: #fff;
+padding: 4px;
+}
+
 .container form label.man{
   
        width: 45%;
-    background-color: blue;
-   
+    background-color: #2e86de;
+    border-radius: 4px 4px 4px 4px;
+ 
     
    
 }
 .container form label.woman{
     
 
-    background-color: deeppink;
+    background-color: #ff6b6b;
        width: 45%;
+       border-radius: 4px 4px 4px 4px;
     /* width: 50%; */
     
 }
@@ -80,7 +101,7 @@ justify-content: space-between;
     flex-direction: column;
     justify-content: center;
        width: 100%;
-    height: 20%;
+  
      text-align: center;
      background-color: aliceblue;
     
@@ -92,17 +113,35 @@ justify-content: space-between;
 p#hasil{
    
     
-    height: 20%; 
-    background-color: white;
+    height:  14%;
     text-align: center;
-    color: brown;
-    font-weight: 700;
-    font-size: medium;
-    padding: 9px 0;
+    color: #2e86de;
+    font-size:larger;
+   text-align: center; 
+    /* padding: 0 auto; */
 
 }
 
-.resizedTextbox { width: 100%;  height: 20%;}
+.resizedTextbox { 
+    width: 100%;  
+    height:  14%;
+
+    color: #222f3e;
+	text-align: left;
+	font-size: 20px;
+	font-weight: 200;
+	outline: none;
+	border: none;
+	background: none;
+	border-bottom: 1px solid #341f97;
+			
+}
+
+.resizedTextbox :focus{
+    border-bottom: 2px solid #341f97;
+	width: 300px;
+	transition: 0.5s;
+	}
 
 
 
@@ -111,13 +150,23 @@ p#hasil{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 20%;
+    height: 12%;
     
 }
 
 .button{
-      width: 45%;
+    border-radius: 10px 10px 10px 10px;
+    width: 45%;
     height: 100%;
-    background-color:blue;
-    border-color: blue;
+	border: none;
+	color: #fff;
+	background-image: linear-gradient(120deg,#2e86de,#ff6b6b);	
+	padding: 10px;
+	border-radius: 30px;
+	outline: none;
+	cursor: pointer;
+}
+
+.button :hover{
+    box-shadow: 1px 1px 10px #2e86de;
 }

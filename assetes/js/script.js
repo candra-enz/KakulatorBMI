@@ -3,12 +3,9 @@ const form = document.getElementById('form');
 
 
 form.addEventListener('submit', (e) => {
-
-
     const gender = document.querySelector('input[type="radio"]:checked').value;
     const tinggi = document.getElementById("tinggi").value;
     const result = document.getElementById("hasil");
-
     let hasil = "";
   
   
@@ -21,7 +18,7 @@ form.addEventListener('submit', (e) => {
 
         }
 
-    hasil ='Berat Ideal kamu ' +beratIdeal + ' kg';
+    hasil = 'Berat Ideal kamu ' + beratIdeal + ' kg';
    
    
     result.innerText = hasil;
